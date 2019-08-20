@@ -1,4 +1,4 @@
-# weight_converter
+# Weight Converter
 This web app allows you to enter pounds, kilograms, ounces or grams and allows you to find its equivalent in another metric. 
 
 # Feature
