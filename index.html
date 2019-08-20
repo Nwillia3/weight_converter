@@ -16,19 +16,25 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 offset-md-3">
+        <div class="col-sm-12 col-md-3">
+          <button id="grams-btn" class="btn-lg red">Grams</button>
+          <button id="kilo-btn" class="btn-lg red">Kilograms</button>
+          <button id="lbs-btn" class="btn-lg red">Pounds</button>
+          <button id="oz-btn" class="btn-lg red">Ounces</button>
+        </div>
+        <div class="col-md-6 offset-md-2">
           <h1 class="display-4 text-center text-white">Weight Converter</h1>
           <form action="">
             <div class="form-group">
               <input
                 type="number"
                 class="form-control form-control-lg"
-                placeholder="Enter pounds"
-                id="lbs"
+                placeholder="Select your metric and then enter weight"
+                id="weight"
               />
             </div>
           </form>
-          <div id="output">
+          <div id="lbs">
             <div class="card bg-primary">
               <div class="card-block">
                 <h4>Grams:</h4>
@@ -48,12 +54,79 @@
               </div>
             </div>
           </div>
+          <div id="kg">
+            <div class="card bg-primary">
+              <div class="card-block">
+                <h4>Grams:</h4>
+                <div id="gOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-success">
+              <div class="card-block">
+                <h4>ounces:</h4>
+                <div id="ozOutput"></div>
+              </div>
+            </div>
+
+            <div class="card bg-primary ">
+              <div class="card-block">
+                <h4>pounds:</h4>
+                <div id="lbsOutput"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="oz">
+            <div class="card bg-primary">
+              <div class="card-block">
+                <h4>Grams:</h4>
+                <div id="gOutput"></div>
+              </div>
+            </div>
+
+            <div class="card bg-danger ">
+              <div class="card-block">
+                <h4>Kilograms:</h4>
+                <div id="kgOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-primary ">
+              <div class="card-block">
+                <h4>pounds:</h4>
+                <div id="lbsOutput"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="grams">
+            <div class="card bg-success">
+              <div class="card-block">
+                <h4>ounces:</h4>
+                <div id="ozOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-danger ">
+              <div class="card-block">
+                <h4>Kilograms:</h4>
+                <div id="kgOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-primary ">
+              <div class="card-block">
+                <h4>pounds:</h4>
+                <div id="lbsOutput"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <script src="index.js"></script>
     <script>
-      document.getElementById("output").style.visibility = "hidden";
+      document.getElementById("lbs").style.display = "none";
+      document.getElementById("kg").style.display = "none";
+      document.getElementById("oz").style.display = "none";
+      document.getElementById("grams").style.display = "none";
     </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
